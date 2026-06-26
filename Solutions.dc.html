@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #060a14; }
+  *::selection { background: rgba(63,200,224,0.25); color: #fff; }
+  a.tl-link:hover { color: #fff !important; }
+</style>
+</helmet>
+
+<div style="position:relative;min-height:100vh;background:#060a14;color:#eaf0f9;font-family:'IBM Plex Sans',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden;--ac:{{ accentVar }};">
+
+  <div style="position:fixed;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(rgba(120,150,200,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(120,150,200,0.05) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 120% 80% at 50% 0%,#000 30%,transparent 80%);-webkit-mask-image:radial-gradient(ellipse 120% 80% at 50% 0%,#000 30%,transparent 80%);"></div>
+
+  <!-- NAV -->
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(6,10,20,0.78);border-bottom:1px solid rgba(120,150,200,0.10);">
+    <div style="max-width:1240px;margin:0 auto;padding:0 40px;height:70px;display:flex;align-items:center;justify-content:space-between;">
+      <a href="Taliden.dc.html" style="display:flex;align-items:center;text-decoration:none;"><img src="taliden-logo.png" alt="Taliden" style="height:24px;width:auto;display:block;"></a>
+      <div style="display:flex;align-items:center;gap:36px;">
+        <a class="tl-link" href="Platform.dc.html" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ac,#3fc8e0);text-decoration:none;">Platform</a>
+        <a class="tl-link" href="Solutions.dc.html" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#9aa7bd;text-decoration:none;">Solutions</a>
+        <a class="tl-link" href="Why-Taliden.dc.html" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#9aa7bd;text-decoration:none;">Why Taliden</a>
+        <a class="tl-link" href="Governance.dc.html" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#9aa7bd;text-decoration:none;">Governance</a>
+        <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#06121a;background:var(--ac,#3fc8e0);text-decoration:none;padding:10px 18px;border-radius:2px;">Book a Demo</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section style="position:relative;z-index:1;padding:150px 0 70px;overflow:hidden;">
+    <div style="position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:900px;height:500px;background:radial-gradient(ellipse at center,rgba(63,200,224,0.08),transparent 70%);pointer-events:none;"></div>
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:0 40px;">
+      <div style="display:inline-flex;align-items:center;gap:11px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--ac,#3fc8e0);margin-bottom:26px;"><svg width="13" height="9" viewBox="0 0 13 9"><path d="M1 8 L6.5 1.5 L12 8" fill="none" stroke="var(--ac,#3fc8e0)" stroke-width="1.5"></path></svg>The Platform</div>
+      <h1 style="font-family:'Saira',sans-serif;font-size:clamp(38px,5vw,64px);font-weight:500;line-height:1.04;letter-spacing:-0.01em;margin:0 0 24px;max-width:900px;color:#f3f7fc;">A semantic operating layer for <span style="color:var(--ac,#3fc8e0);font-weight:600;">enterprise agents.</span></h1>
+      <p style="font-size:19px;line-height:1.6;color:#9aa7bd;max-width:680px;margin:0;">Taliden models the business itself — entities, rules, processes, roles, decisions, constraints, states, exceptions — then uses that semantic brain to instantiate governed agents that support real enterprise capabilities.</p>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section style="position:relative;z-index:1;padding:80px 0 100px;border-top:1px solid rgba(120,150,200,0.08);">
+    <div style="max-width:1240px;margin:0 auto;padding:0 40px;">
+      <div style="display:flex;align-items:center;gap:11px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--ac,#3fc8e0);margin-bottom:40px;"><span>01</span><span style="width:26px;height:1px;background:var(--ac,#3fc8e0);"></span>What Taliden does</div>
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;">
+        <div style="border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:26px 22px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0));">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ac,#3fc8e0)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2"></circle><circle cx="18" cy="7" r="2"></circle><circle cx="9" cy="18" r="2"></circle><circle cx="13" cy="11" r="2"></circle><line x1="8" y1="6.4" x2="11" y2="10"></line><line x1="15" y1="10.2" x2="16.6" y2="8"></line><line x1="11.6" y1="12.8" x2="9.7" y2="16"></line></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ac,#3fc8e0);">01</span></div>
+          <h3 style="font-family:'Saira',sans-serif;font-size:19px;font-weight:600;margin:0 0 10px;color:#eaf0f9;">Model the business</h3>
+          <p style="font-size:14px;line-height:1.55;color:#8190a8;margin:0;">Capture domain knowledge as semantic graphs: objects, states, policies, rules, constraints, and relationships.</p>
+        </div>
+        <div style="border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:26px 22px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0));">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ac,#3fc8e0)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 19 7.5 19 16.5 12 21 5 16.5 5 7.5Z"></path><circle cx="12" cy="12" r="2.6"></circle></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ac,#3fc8e0);">02</span></div>
+          <h3 style="font-family:'Saira',sans-serif;font-size:19px;font-weight:600;margin:0 0 10px;color:#eaf0f9;">Instantiate agents</h3>
+          <p style="font-size:14px;line-height:1.55;color:#8190a8;margin:0;">Create agents from reusable patterns — planning, scheduling, approvals, assignments, escalations, exceptions.</p>
+        </div>
+        <div style="border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:26px 22px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0));">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ac,#3fc8e0)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 19 6 19 11C19 16 15.5 19.5 12 21 8.5 19.5 5 16 5 11L5 6Z"></path><path d="M9 12l2 2 4-4"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ac,#3fc8e0);">03</span></div>
+          <h3 style="font-family:'Saira',sans-serif;font-size:19px;font-weight:600;margin:0 0 10px;color:#eaf0f9;">Govern execution</h3>
+          <p style="font-size:14px;line-height:1.55;color:#8190a8;margin:0;">Control what agents access, decide, recommend, or execute by role, policy, process state, and risk level.</p>
+        </div>
+        <div style="border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:26px 22px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0));">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ac,#3fc8e0)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="5" rx="1"></rect><rect x="4" y="14" width="16" height="5" rx="1"></rect><circle cx="7.5" cy="7.5" r="0.5" fill="currentColor"></circle><circle cx="7.5" cy="16.5" r="0.5" fill="currentColor"></circle></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ac,#3fc8e0);">04</span></div>
+          <h3 style="font-family:'Saira',sans-serif;font-size:19px;font-weight:600;margin:0 0 10px;color:#eaf0f9;">Connect to systems</h3>
+          <p style="font-size:14px;line-height:1.55;color:#8190a8;margin:0;">Integrate agents with ERP, TMS, WMS, EAM, HRIS, CRM, document repositories, calendars, and ticketing.</p>
+        </div>
+        <div style="border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:26px 22px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0));">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ac,#3fc8e0)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1"></rect><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="16" x2="12" y2="20"></line><path d="M7 12l3-3 2 2 4-4"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ac,#3fc8e0);">05</span></div>
+          <h3 style="font-family:'Saira',sans-serif;font-size:19px;font-weight:600;margin:0 0 10px;color:#eaf0f9;">Monitor &amp; improve</h3>
+          <p style="font-size:14px;line-height:1.55;color:#8190a8;margin:0;">Track agent actions, decisions, exceptions, confidence, human overrides, performance, and outcomes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIVE LAYERS -->
+  <section style="position:relative;z-index:1;padding:100px 0;border-top:1px solid rgba(120,150,200,0.08);background:linear-gradient(180deg,rgba(255,255,255,0.012),transparent);">
+    <div style="max-width:1240px;margin:0 auto;padding:0 40px;">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:50px;flex-wrap:wrap;">
+        <div>
+          <div style="display:flex;align-items:center;gap:11px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--ac,#3fc8e0);margin-bottom:22px;"><span>02</span><span style="width:26px;height:1px;background:var(--ac,#3fc8e0);"></span>Five connected layers</div>
+          <h2 style="font-family:'Saira',sans-serif;font-size:clamp(30px,3.6vw,46px);font-weight:500;line-height:1.08;letter-spacing:-0.01em;margin:0;color:#f3f7fc;">One platform. End to end.</h2>
+        </div>
+        <p style="font-size:16px;line-height:1.6;color:#8190a8;max-width:360px;margin:0;">Each layer is independently powerful. Together they move AI from assistance to governed execution.</p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="display:grid;grid-template-columns:56px 0.9fr 1.4fr;gap:28px;align-items:center;border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:28px 32px;background:rgba(255,255,255,0.012);">
+          <div style="font-family:'Saira',sans-serif;font-size:30px;font-weight:600;color:rgba(63,200,224,0.45);">01</div>
+          <div><h3 style="font-family:'Saira',sans-serif;font-size:23px;font-weight:600;margin:0 0 6px;color:#f3f7fc;">Taliden Graph</h3><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ac,#3fc8e0);letter-spacing:0.04em;">The domain knowledge layer</div></div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Entities</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Relationships</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">States</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Policies</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Rules</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Roles &amp; authority</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">System mappings</span>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:56px 0.9fr 1.4fr;gap:28px;align-items:center;border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:28px 32px;background:rgba(255,255,255,0.012);">
+          <div style="font-family:'Saira',sans-serif;font-size:30px;font-weight:600;color:rgba(63,200,224,0.45);">02</div>
+          <div><h3 style="font-family:'Saira',sans-serif;font-size:23px;font-weight:600;margin:0 0 6px;color:#f3f7fc;">Taliden Studio</h3><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ac,#3fc8e0);letter-spacing:0.04em;">The agent design environment</div></div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Agent builder</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Capability config</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Policy harness</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Tool assignment</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Approval design</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Test scenarios</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Eval packs</span>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:56px 0.9fr 1.4fr;gap:28px;align-items:center;border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:28px 32px;background:rgba(255,255,255,0.012);">
+          <div style="font-family:'Saira',sans-serif;font-size:30px;font-weight:600;color:rgba(63,200,224,0.45);">03</div>
+          <div><h3 style="font-family:'Saira',sans-serif;font-size:23px;font-weight:600;margin:0 0 6px;color:#f3f7fc;">Taliden Patterns</h3><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ac,#3fc8e0);letter-spacing:0.04em;">The reusable capability library</div></div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Planning</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Scheduling</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Assignment</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Approval</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Exception handling</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Reconciliation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Escalation</span>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:56px 0.9fr 1.4fr;gap:28px;align-items:center;border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:28px 32px;background:rgba(255,255,255,0.012);">
+          <div style="font-family:'Saira',sans-serif;font-size:30px;font-weight:600;color:rgba(63,200,224,0.45);">04</div>
+          <div><h3 style="font-family:'Saira',sans-serif;font-size:23px;font-weight:600;margin:0 0 6px;color:#f3f7fc;">Taliden Runtime</h3><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ac,#3fc8e0);letter-spacing:0.04em;">The governed execution engine</div></div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Orchestration</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Role-based access</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Tool governance</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">State validation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Policy checks</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ac,#3fc8e0);border:1px solid rgba(63,200,224,0.4);border-radius:2px;padding:5px 9px;">Human-in-the-loop</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Audit logs</span>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:56px 0.9fr 1.4fr;gap:28px;align-items:center;border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:28px 32px;background:rgba(255,255,255,0.012);">
+          <div style="font-family:'Saira',sans-serif;font-size:30px;font-weight:600;color:rgba(63,200,224,0.45);">05</div>
+          <div><h3 style="font-family:'Saira',sans-serif;font-size:23px;font-weight:600;margin:0 0 6px;color:#f3f7fc;">Taliden Control Tower</h3><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ac,#3fc8e0);letter-spacing:0.04em;">The operational monitoring layer</div></div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Agent activity</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Exception queue</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">SLA risk</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Decision traceability</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Human overrides</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8190a8;border:1px solid rgba(120,150,200,0.16);border-radius:2px;padding:5px 9px;">Compliance evidence</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section style="position:relative;z-index:1;padding:100px 0;border-top:1px solid rgba(120,150,200,0.08);">
+    <div style="max-width:1240px;margin:0 auto;padding:0 40px;">
+      <div style="display:flex;align-items:center;gap:11px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--ac,#3fc8e0);margin-bottom:22px;"><span>03</span><span style="width:26px;height:1px;background:var(--ac,#3fc8e0);"></span>How it works</div>
+      <h2 style="font-family:'Saira',sans-serif;font-size:clamp(30px,3.6vw,46px);font-weight:500;line-height:1.08;letter-spacing:-0.01em;margin:0 0 50px;max-width:780px;color:#f3f7fc;">From business knowledge to agentic execution.</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(120,150,200,0.1);border:1px solid rgba(120,150,200,0.1);border-radius:4px;overflow:hidden;">
+        <div style="background:#080d18;padding:32px 30px;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ac,#3fc8e0);margin-bottom:18px;">STEP 01</div>
+          <h3 style="font-family:'Saira',sans-serif;font-size:20px;font-weight:600;margin:0 0 10px;color:#eaf0f9;">Capture knowledge</h3>
+          <p style="font-size:14px;line-height:1.6;color:#8190a8;margin:0;">Map domain knowledge into a semantic graph: entities, states, rules, constraints, policies, roles, systems, and decisions.</p>
+        </div>
+        <div style="background:#080d18;padding:32px 30px;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ac,#3fc8e0);margin-bottom:18px;">STEP 02</div>
+          <h3 style="font-family:'Saira',sans-serif;font-size:20px;font-weight:600;margin:0 0 10px;color:#eaf0f9;">Apply patterns</h3>
+          <p style="font-size:14px;line-height:1.6;color:#8190a8;margin:0;">Apply reusable patterns — planning, scheduling, approval, assignment, exception handling, reconciliation.</p>
+        </div>
+        <div style="background:#080d18;padding:32px 30px;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ac,#3fc8e0);margin-bottom:18px;">STEP 03</div>
+          <h3 style="font-family:'Saira',sans-serif;font-size:20px;font-weight:600;margin:0 0 10px;color:#eaf0f9;">Instantiate agents</h3>
+          <p style="font-size:14px;line-height:1.6;color:#8190a8;margin:0;">Create agents grounded in the domain graph and configured around a specific business capability.</p>
+        </div>
+        <div style="background:#080d18;padding:32px 30px;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ac,#3fc8e0);margin-bottom:18px;">STEP 04</div>
+          <h3 style="font-family:'Saira',sans-serif;font-size:20px;font-weight:600;margin:0 0 10px;color:#eaf0f9;">Govern behavior</h3>
+          <p style="font-size:14px;line-height:1.6;color:#8190a8;margin:0;">Define what the agent can see, suggest, decide, escalate, or execute — and what stays human-owned.</p>
+        </div>
+        <div style="background:#080d18;padding:32px 30px;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ac,#3fc8e0);margin-bottom:18px;">STEP 05</div>
+          <h3 style="font-family:'Saira',sans-serif;font-size:20px;font-weight:600;margin:0 0 10px;color:#eaf0f9;">Execute across systems</h3>
+          <p style="font-size:14px;line-height:1.6;color:#8190a8;margin:0;">Agents interact with enterprise systems through governed tools, workflows, and approval gates.</p>
+        </div>
+        <div style="background:#080d18;padding:32px 30px;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ac,#3fc8e0);margin-bottom:18px;">STEP 06</div>
+          <h3 style="font-family:'Saira',sans-serif;font-size:20px;font-weight:600;margin:0 0 10px;color:#eaf0f9;">Monitor &amp; improve</h3>
+          <p style="font-size:14px;line-height:1.6;color:#8190a8;margin:0;">Track decisions, exceptions, outcomes, overrides, and business impact in the Control Tower.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOMAIN EXAMPLE -->
+  <section style="position:relative;z-index:1;padding:100px 0;border-top:1px solid rgba(120,150,200,0.08);overflow:hidden;">
+    <div style="position:absolute;top:50%;left:-200px;transform:translateY(-50%);width:760px;height:760px;border-radius:50%;background:radial-gradient(circle, transparent 0 30%, rgba(63,200,224,0.05) 30% 30.4%, transparent 30.4% 48%, rgba(63,200,224,0.04) 48% 48.4%, transparent 48.4% 68%, rgba(63,200,224,0.03) 68% 68.4%, transparent 68.4%);pointer-events:none;"></div>
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center;">
+      <div>
+        <div style="display:flex;align-items:center;gap:11px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--ac,#3fc8e0);margin-bottom:22px;"><span>04</span><span style="width:26px;height:1px;background:var(--ac,#3fc8e0);"></span>Why it matters</div>
+        <h2 style="font-family:'Saira',sans-serif;font-size:clamp(28px,3.4vw,42px);font-weight:500;line-height:1.1;letter-spacing:-0.01em;margin:0 0 20px;color:#f3f7fc;">Grounded in how your domain actually works.</h2>
+        <p style="font-size:17px;line-height:1.7;color:#9aa7bd;margin:0 0 18px;">Without semantic structure, AI relies on scattered documents, fragmented data, and prompt engineering. Taliden Graph gives AI an explicit model of the business &mdash; the meaning behind every object, state, and rule.</p>
+        <p style="font-size:17px;line-height:1.7;color:#9aa7bd;margin:0;">In transportation, it can model the difference between a <span style="color:#cdd6e6;">live load</span> and a <span style="color:#cdd6e6;">preload</span>, understand that a preload consumes yard capacity but not dock capacity at pickup, and validate scheduling recommendations against warehouse loading rules &mdash; before any agent acts.</p>
+      </div>
+      <div style="border:1px solid rgba(120,150,200,0.14);border-radius:4px;background:#0a1120;overflow:hidden;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-bottom:1px solid rgba(120,150,200,0.1);font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#5f6d85;"><span>Domain Schema</span><span>transportation.graph</span></div>
+        <div style="padding:8px 22px 18px;">
+          <div style="display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid rgba(120,150,200,0.07);"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ac,#3fc8e0);min-width:74px;">ENTITY</span><span style="font-size:14px;color:#cdd6e6;">Load, Carrier, Dock, Yard, Appointment</span></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid rgba(120,150,200,0.07);"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ac,#3fc8e0);min-width:74px;">STATE</span><span style="font-size:14px;color:#cdd6e6;">live_load &middot; preload &middot; ready &middot; shipped</span></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid rgba(120,150,200,0.07);"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ac,#3fc8e0);min-width:74px;">RULE</span><span style="font-size:14px;color:#cdd6e6;">preload &rarr; consumes yard, not dock</span></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:14px 0;"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#c98a3a;min-width:74px;">CONSTRAINT</span><span style="font-size:14px;color:#cdd6e6;">ship_date must align to ready_date</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIGN PRINCIPLES -->
+  <section style="position:relative;z-index:1;padding:100px 0;border-top:1px solid rgba(120,150,200,0.08);background:linear-gradient(180deg,rgba(255,255,255,0.012),transparent);">
+    <div style="max-width:1240px;margin:0 auto;padding:0 40px;">
+      <div style="display:flex;align-items:center;gap:11px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--ac,#3fc8e0);margin-bottom:22px;"><span>05</span><span style="width:26px;height:1px;background:var(--ac,#3fc8e0);"></span>Design principles</div>
+      <h2 style="font-family:'Saira',sans-serif;font-size:clamp(28px,3.4vw,42px);font-weight:500;line-height:1.1;letter-spacing:-0.01em;margin:0 0 44px;max-width:760px;color:#f3f7fc;">Every agent is built the same way.</h2>
+      <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:14px;">
+        <div style="border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:22px 18px;background:rgba(255,255,255,0.012);display:flex;flex-direction:column;gap:14px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ac,#3fc8e0)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"></circle><path d="M5.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"></path></svg><span style="font-family:'Saira',sans-serif;font-size:15px;font-weight:500;color:#eaf0f9;line-height:1.25;">Human accountable</span></div>
+        <div style="border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:22px 18px;background:rgba(255,255,255,0.012);display:flex;flex-direction:column;gap:14px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ac,#3fc8e0)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 19 7.5 19 16.5 12 21 5 16.5 5 7.5Z"></path><circle cx="12" cy="12" r="2.6"></circle></svg><span style="font-family:'Saira',sans-serif;font-size:15px;font-weight:500;color:#eaf0f9;line-height:1.25;">Agent assisted</span></div>
+        <div style="border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:22px 18px;background:rgba(255,255,255,0.012);display:flex;flex-direction:column;gap:14px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ac,#3fc8e0)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="5" rx="1"></rect><rect x="4" y="14" width="16" height="5" rx="1"></rect></svg><span style="font-family:'Saira',sans-serif;font-size:15px;font-weight:500;color:#eaf0f9;line-height:1.25;">System integrated</span></div>
+        <div style="border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:22px 18px;background:rgba(255,255,255,0.012);display:flex;flex-direction:column;gap:14px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ac,#3fc8e0)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2"></circle><circle cx="18" cy="7" r="2"></circle><circle cx="9" cy="18" r="2"></circle><circle cx="13" cy="11" r="2"></circle><line x1="8" y1="6.4" x2="11" y2="10"></line><line x1="15" y1="10.2" x2="16.6" y2="8"></line><line x1="11.6" y1="12.8" x2="9.7" y2="16"></line></svg><span style="font-family:'Saira',sans-serif;font-size:15px;font-weight:500;color:#eaf0f9;line-height:1.25;">Graph grounded</span></div>
+        <div style="border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:22px 18px;background:rgba(255,255,255,0.012);display:flex;flex-direction:column;gap:14px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ac,#3fc8e0)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 19 6 19 11C19 16 15.5 19.5 12 21 8.5 19.5 5 16 5 11L5 6Z"></path><path d="M9 12l2 2 4-4"></path></svg><span style="font-family:'Saira',sans-serif;font-size:15px;font-weight:500;color:#eaf0f9;line-height:1.25;">Policy governed</span></div>
+        <div style="border:1px solid rgba(120,150,200,0.12);border-radius:3px;padding:22px 18px;background:rgba(255,255,255,0.012);display:flex;flex-direction:column;gap:14px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ac,#3fc8e0)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"></path><line x1="9.5" y1="12" x2="16" y2="12"></line><line x1="9.5" y1="15" x2="16" y2="15"></line><line x1="9.5" y1="18" x2="13" y2="18"></line></svg><span style="font-family:'Saira',sans-serif;font-size:15px;font-weight:500;color:#eaf0f9;line-height:1.25;">Audit ready</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" style="position:relative;z-index:1;padding:110px 0;border-top:1px solid rgba(120,150,200,0.08);">
+    <div style="max-width:1240px;margin:0 auto;padding:0 40px;">
+      <div style="position:relative;border:1px solid rgba(63,200,224,0.25);border-radius:4px;padding:64px 56px;background:linear-gradient(135deg,rgba(63,200,224,0.07),rgba(63,200,224,0.01));overflow:hidden;">
+        <span style="position:absolute;top:-1px;left:-1px;width:18px;height:18px;border-top:1px solid var(--ac,#3fc8e0);border-left:1px solid var(--ac,#3fc8e0);"></span>
+        <span style="position:absolute;bottom:-1px;right:-1px;width:18px;height:18px;border-bottom:1px solid var(--ac,#3fc8e0);border-right:1px solid var(--ac,#3fc8e0);"></span>
+        <div style="position:relative;max-width:680px;">
+          <h2 style="font-family:'Saira',sans-serif;font-size:clamp(30px,3.8vw,46px);font-weight:500;line-height:1.08;letter-spacing:-0.01em;margin:0 0 20px;color:#f7fafd;">See the platform in your domain.</h2>
+          <p style="font-size:18px;line-height:1.6;color:#9aa7bd;margin:0 0 34px;">Request an architecture walkthrough and see how Taliden Graph, Studio, Patterns, Runtime, and Control Tower fit your operating model.</p>
+          <a href="#" style="display:inline-flex;align-items:center;gap:9px;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#06121a;background:var(--ac,#3fc8e0);text-decoration:none;padding:16px 30px;border-radius:2px;box-shadow:0 0 36px rgba(63,200,224,0.3);">Request Architecture Walkthrough <span style="font-size:15px;">&#8250;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="position:relative;z-index:1;padding:64px 0 48px;border-top:1px solid rgba(120,150,200,0.1);">
+    <div style="max-width:1240px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;">
+      <div>
+        <div style="display:flex;align-items:center;margin-bottom:18px;"><img src="taliden-logo.png" alt="Taliden" style="height:22px;width:auto;display:block;"></div>
+        <p style="font-size:14px;line-height:1.6;color:#5f6d85;max-width:280px;margin:0;">The semantic agent platform for enterprises moving beyond AI pilots — turning business knowledge into governed execution.</p>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#5f6d85;margin-bottom:16px;">Platform</div>
+        <div style="display:flex;flex-direction:column;gap:11px;">
+          <a class="tl-link" href="Platform.dc.html" style="font-size:14px;color:#9aa7bd;text-decoration:none;">Taliden Graph</a><a class="tl-link" href="Platform.dc.html" style="font-size:14px;color:#9aa7bd;text-decoration:none;">Taliden Studio</a><a class="tl-link" href="Platform.dc.html" style="font-size:14px;color:#9aa7bd;text-decoration:none;">Taliden Patterns</a><a class="tl-link" href="Platform.dc.html" style="font-size:14px;color:#9aa7bd;text-decoration:none;">Taliden Runtime</a><a class="tl-link" href="Platform.dc.html" style="font-size:14px;color:#9aa7bd;text-decoration:none;">Control Tower</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#5f6d85;margin-bottom:16px;">Solutions</div>
+        <div style="display:flex;flex-direction:column;gap:11px;">
+          <a class="tl-link" href="Solutions.dc.html" style="font-size:14px;color:#9aa7bd;text-decoration:none;">Production Planning</a><a class="tl-link" href="Solutions.dc.html" style="font-size:14px;color:#9aa7bd;text-decoration:none;">Transportation</a><a class="tl-link" href="Solutions.dc.html" style="font-size:14px;color:#9aa7bd;text-decoration:none;">Maintenance</a><a class="tl-link" href="Solutions.dc.html" style="font-size:14px;color:#9aa7bd;text-decoration:none;">Procurement</a><a class="tl-link" href="Solutions.dc.html" style="font-size:14px;color:#9aa7bd;text-decoration:none;">Workforce</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#5f6d85;margin-bottom:16px;">Company</div>
+        <div style="display:flex;flex-direction:column;gap:11px;">
+          <a class="tl-link" href="Why-Taliden.dc.html" style="font-size:14px;color:#9aa7bd;text-decoration:none;">Why Taliden</a><a class="tl-link" href="Governance.dc.html" style="font-size:14px;color:#9aa7bd;text-decoration:none;">Security &amp; Governance</a><a class="tl-link" href="Taliden.dc.html" style="font-size:14px;color:#9aa7bd;text-decoration:none;">Home</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1240px;margin:48px auto 0;padding:24px 40px 0;border-top:1px solid rgba(120,150,200,0.08);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5f6d85;">&copy; 2026 Taliden &mdash; Enterprise Semantic Agent Platform</div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.04em;color:#5f6d85;text-transform:uppercase;">Graph-grounded &middot; Policy-governed &middot; Audit-ready</div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900},&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#3fc8e0&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#3fc8e0&quot;,&quot;#4a8af4&quot;,&quot;#5ad1b0&quot;,&quot;#9b8cff&quot;]}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { accentVar: this.props.accent || '#3fc8e0' };
+  }
+}
+</script>
+</body>
+</html>
